@@ -4,6 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cuteback"
     tools:context=".IntentsImplicitos">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toptext"
+        android:text="Implicit Intents"/>
+    <Button
+        android:id="@+id/epic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Epic"
+        app:layout_constraintTop_toBottomOf="@id/butonstop"
+        app:layout_constraintStart_toEndOf="@id/sideleft"
+        app:layout_constraintEnd_toStartOf="@id/sideright"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/hamilton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Hamilton"
+        app:layout_constraintTop_toBottomOf="@id/epic"
+        app:layout_constraintStart_toEndOf="@id/sideleft"
+        app:layout_constraintEnd_toStartOf="@id/sideright"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/heathers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Heathers"
+        app:layout_constraintTop_toBottomOf="@id/hamilton"
+        app:layout_constraintStart_toEndOf="@id/sideleft"
+        app:layout_constraintEnd_toStartOf="@id/sideright"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"/>
+    <Button
+        android:id="@+id/cyclone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Ride the Cyclone"
+        app:layout_constraintTop_toBottomOf="@id/heathers"
+        app:layout_constraintStart_toEndOf="@id/sideleft"
+        app:layout_constraintEnd_toStartOf="@id/sideright"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/toptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butonstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sideleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sideright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
