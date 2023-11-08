@@ -25,5 +25,12 @@ public class IntentsExplicitos extends AppCompatActivity {
                 startActivity(anIntent);
             }
         });
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent abIntent = new Intent(IntentsExplicitos.this, Aboutus.class);
+                startActivity(abIntent);
+            }
+        });
     }
 }
